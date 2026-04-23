@@ -1,0 +1,23 @@
+[directories]
+    rawdir         = "/mnt/data/CCVR5/run000350/"
+    triggerdir     = "/mnt/results/CCVR5/Triggered/run000350/"
+
+[runConfig]
+    filenamePrefix = ["20260412T104842"]
+    runNumber      = ["000350"]
+
+[channels.heat]
+    list           = [1]
+    waveformtype   = "continuous"
+
+[settings]
+    rawType        = "Cupid"
+    verbosity      = 5      # 1-->Error 2-->Warning ... 5-->Debug
+    startTime      = 0      # in seconds
+    stopTime       = 3600   # in seconds
+    stride         = 1      # rebin (to make the plot faster for long periods)
+    plotTrigger    = false  # bool
+    plotDeriv      = false  # bool
+    drawSignal     = false  # bool
+    drawNoise      = false  # bool
+

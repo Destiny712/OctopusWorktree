@@ -1,0 +1,79 @@
+[directories]
+    rawdir            = "/mnt/data/CCVR5/run000350/"
+    triggerdir        = "/mnt/results/CCVR5/Triggered/run000350/"
+    processeddir      = "/mnt/results/CCVR5/Processed/run000350/"
+
+[runConfig]
+    filenamePrefix    = ["20260412T104842"]
+    runNumber         = ["000350"]
+
+[channels.heat]
+    list              = [1]
+    waveformtype      = "continuous"
+
+[settings]
+    rawType           = "Cupid"
+    runType           = "reconstruct"
+    draw              = true
+    overwrite         = true
+    verbosity         = 5       # 1-->Error 2-->Warning ... 5-->Debug
+
+[module.module.heat]
+    windowlength      = [0.6]
+    pretrigger        = [0.3]
+    Draw              = false
+
+[module.timestamp]
+    Draw              = false
+
+# Numero di trigger nella finestra definita in module.module. 
+[module.numberoftriggers.heat] 
+    Draw              = false
+
+# calcola baseline nella finestra definita
+[module.baseline.heat]
+    StartTime         = [0.0]
+    StopTime          = [0.30]
+    Draw              = false
+
+# calcola slope baseline nella finestra definita
+[module.baselineslope.heat]
+    StartTime         = [0.0]
+    StopTime          = [0.30]
+    Draw              = false
+
+[module.maxminusbaseline.heat]
+    SearchWindow      = [0.075]
+    Draw              = false
+
+#calcola in delay di correzione rispetto meta' segnale
+[module.triggerdelay.heat]
+    # Draw              = false  # mi pare che qui non abbia l'argomento Draw, se lo metto si lamenta. 
+
+[module.risetime.heat]
+    StartPercentage   = [10.0]
+    StopPercentage    = [90.0]
+    Draw              = false
+
+[module.decaytime.heat]
+    StartPercentage   = [90.0]
+    StopPercentage    = [10.0]
+    Draw              = false
+
+# deprecated
+[module.triggerdelaycorrection.heat.noise]
+    OutputWaveform    = "triggerdelaycorrected"
+    Draw              = false
+
+# non chiaro cosa faccia 
+[module.baseline.heat.delaycorrected]
+    InputWaveform     = "triggerdelaycorrected"
+    StartTime         = [0.0]
+    StopTime          = [0.29]
+    Draw              = false
+
+# questo dovrebbe applicare la correzione delta t
+[module.maxminusbaseline.heat.delaycorrected]
+    InputWaveform     = "triggerdelaycorrected"
+    Draw              = false
+

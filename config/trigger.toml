@@ -1,0 +1,29 @@
+[directories]
+    rawdir            = "/mnt/data/CCVR5/run000350/"
+    triggerdir        = "/mnt/results/CCVR5/Triggered/run000350/"
+
+[runConfig]
+    filenamePrefix    = ["20260412T104842"]
+    runNumber         = ["000350"]
+
+[channels.heat]
+    list              = [1]
+    waveformtype      = "continuous"
+
+[settings]
+    rawType           = "Cupid"
+    runType           = "trigger"
+    draw              = false
+    overwrite         = true
+    verbosity         = 5       # 1-->Error 2-->Warning ... 5-->Debug
+
+[trigger.derivative.heat]
+    # NRMSList          = [4.0]
+    UseFixedThreshold = [true]
+    FixedThrList      = [0.02]  # fixed threshold value
+    NAboveList        = [5]
+    # DerivativeList    = [false]
+    BufferLengthList  = [0.15]  # where it computes the mean
+    NoisePeriodList   = [5.123456789]
+    Draw              = false
+
