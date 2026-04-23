@@ -1,0 +1,2175 @@
+OCTOPUS : +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+[0mSummary : -------------------------
+[0mSummary :    Module    zeropadding.
+[0mSummary : -------------------------
+[0mSummary : Option BaselineModule
+[0mSummary :        Name of baseline module where to retrieve the baseline from.
+[0mSummary :        Type: string
+[0mSummary :        Default value: baselinesubtraction_
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : -------------------------
+[0mSummary : ---------------------------------
+[0mSummary :    Module    variablecombination.
+[0mSummary : ---------------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option list NameVar
+[0mSummary :             
+[0mSummary :             Type: string
+[0mSummary :             Default value: 
+[0mSummary : Option list Operation
+[0mSummary :             
+[0mSummary :             Type: string
+[0mSummary :             Default value: none
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ---------------------------------
+[0mSummary : ------------------------------------
+[0mSummary :    Module    triggerdelaycorrection.
+[0mSummary : ------------------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option TimestampModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: timestamp
+[0mSummary : Option TriggerDelayModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: triggerdelay
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ------------------------------------
+[0mSummary : --------------------------
+[0mSummary :    Module    triggerdelay.
+[0mSummary : --------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputBaselineModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: baseline
+[0mSummary : Option InputMaxMinusBaselineModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: maxminusbaseline
+[0mSummary : Option InputModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: module
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : --------------------------
+[0mSummary : -----------------------
+[0mSummary :    Module    timestamp.
+[0mSummary : -----------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : -----------------------
+[0mSummary : ------------------
+[0mSummary :    Module    test.
+[0mSummary : ------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ------------------
+[0mSummary : ----------------------------
+[0mSummary :    Module    syntheticpulse.
+[0mSummary : ----------------------------
+[0mSummary : Option AP
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option APModuleName
+[0mSummary :        Module from which to retrieve AP histogram
+[0mSummary :        Type: string
+[0mSummary :        Default value: averagepulse
+[0mSummary : Option Amplitude []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: 1.000000
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: module
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ----------------------------
+[0mSummary : ---------------------------
+[0mSummary :    Module    stabilization.
+[0mSummary : ---------------------------
+[0mSummary : Option map of vectors Coefficients [adimensional]
+[0mSummary :                       Coefficient of Stabilization function
+[0mSummary :                       Type: double
+[0mSummary :                       Default value: empty vector
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option map Formula []
+[0mSummary :            
+[0mSummary :            Type: string
+[0mSummary :            Default value: 
+[0mSummary : Option InputAmplitude
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: maxminusbaseline
+[0mSummary : Option InputBaseline
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: baseline
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option Mode
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: pulser
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RemoveOutliers []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: -1.000000
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option SegmentThreshold []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: 2.000000
+[0mSummary : Option SegmentatedFit
+[0mSummary :        
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option StabValue []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: 10000.000000
+[0mSummary : Option Threshold []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: 2.000000
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ---------------------------
+[0mSummary : ----------------------
+[0mSummary :    Module    risetime.
+[0mSummary : ----------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputBaselineModule
+[0mSummary :        Name of module where to retrieve the baseline from.
+[0mSummary :        Type: string
+[0mSummary :        Default value: baseline
+[0mSummary : Option InputMaxMinusBaselineModule
+[0mSummary :        Name of module where to retrieve the maxminusbaseline value from.
+[0mSummary :        Type: string
+[0mSummary :        Default value: maxminusbaseline
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map StartPercentage []
+[0mSummary :            Fraction of signal height from which to start rise time calculation.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map StopPercentage []
+[0mSummary :            Fraction of signal height where to stop rise time calculation.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ----------------------
+[0mSummary : --------------------------
+[0mSummary :    Module    pulserfinder.
+[0mSummary : --------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputTimestampModule
+[0mSummary :        Module from which to retrieve timestamp variable.
+[0mSummary :        Type: string
+[0mSummary :        Default value: timestamp
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option map PulserPeriod [sec]
+[0mSummary :            Delta-t between subsequent pulser events.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : --------------------------
+[0mSummary : ----------------------
+[0mSummary :    Module    pulsefit.
+[0mSummary : ----------------------
+[0mSummary : Option ComplexConj
+[0mSummary :        true: poles are fCC, false they are not
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option Domain
+[0mSummary :        Possible options: Time, Fourier. Domain od the space where the fit is com
+Summary : puted.
+[0mSummary :        Type: string
+[0mSummary :        Default value: Time
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option list Interval [s]
+[0mSummary :             Interval of the fit in seconds or in Frequency (Hz)
+[0mSummary :             Type: double
+[0mSummary :             Default value: 0.000000
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ----------------------
+[0mSummary : ---------------------------
+[0mSummary :    Module    powerintegral.
+[0mSummary : ---------------------------
+[0mSummary : Option ANPS
+[0mSummary :        Name of ANPS histogram
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option ANPSModuleName
+[0mSummary :        Module from which to retrieve ANPS histogram
+[0mSummary :        Type: string
+[0mSummary :        Default value: averagepowerspectrum
+[0mSummary : Option CutOffFrequency [Hz]
+[0mSummary :        Maximum frequency for integral calculation.
+[0mSummary :        Type: double
+[0mSummary :        Default value: 1000.000000
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option SubtractNoise
+[0mSummary :        Option to subtract noise before integral calculation.
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ---------------------------
+[0mSummary : --------------------------------
+[0mSummary :    Module    polezerocorrection.
+[0mSummary : --------------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map Tau [sec]
+[0mSummary :            Decay time of exponential to be corrected for
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map nsamples []
+[0mSummary :            Filter length in number of samples
+[0mSummary :            Type: int64_t
+[0mSummary :            Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : --------------------------------
+[0mSummary : --------------------------
+[0mSummary :    Module    polarityflip.
+[0mSummary : --------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : --------------------------
+[0mSummary : ----------------------------------
+[0mSummary :    Module    optimumfilterclassic.
+[0mSummary : ----------------------------------
+[0mSummary : Option ANPS
+[0mSummary :        Name of ANPS histogram.
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option ANPSModuleName
+[0mSummary :        Module from which to retrieve ANPS histogram
+[0mSummary :        Type: string
+[0mSummary :        Default value: averagepowerspectrum
+[0mSummary : Option AP
+[0mSummary :        Name of AP histogram
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option APModuleName
+[0mSummary :        Module from which to retrieve AP histogram
+[0mSummary :        Type: string
+[0mSummary :        Default value: averagepulse
+[0mSummary : Option CutOffFrequency [sec]
+[0mSummary :        Maximum frequency for amplitude calculation.
+[0mSummary :        Type: double
+[0mSummary :        Default value: -1.000000
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option DrawOption
+[0mSummary :        Possible options: Chi2, ReIm, PowerPhase, PowerFreqPhase, ANPS, power
+[0mSummary :        Type: string
+[0mSummary :        Default value: power
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputModule
+[0mSummary :        Name of basic module where to retrieve isnoise variable from.
+[0mSummary :        Type: string
+[0mSummary :        Default value: module
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option Interpolate
+[0mSummary :        Quadratic Interpolation for Chi2 minimization.
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option LoadAP
+[0mSummary :        Load AP from different file than current one.
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option TimeRange [sec]
+[0mSummary :        Time window for Chi2 minimization.
+[0mSummary :        Type: double
+[0mSummary :        Default value: 1.000000
+[0mSummary : Option TukeyAlpha []
+[0mSummary :        Alpha value for Tukey windowing. Ignore for other window functions.
+[0mSummary :        Type: double
+[0mSummary :        Default value: 0.500000
+[0mSummary : Option Windowing
+[0mSummary :        Window function for FFT.
+[0mSummary :        Type: string
+[0mSummary :        Default value: none
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ----------------------------------
+[0mSummary : ---------------------------
+[0mSummary :    Module    optimumfilter.
+[0mSummary : ---------------------------
+[0mSummary : Option ANPS
+[0mSummary :        Name of ANPS histogram.
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option ANPSModuleName
+[0mSummary :        Module from which to retrieve ANPS histogram
+[0mSummary :        Type: string
+[0mSummary :        Default value: averagepowerspectrum
+[0mSummary : Option AP
+[0mSummary :        Name of AP histogram
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option APModuleName
+[0mSummary :        Module from which to retrieve AP histogram
+[0mSummary :        Type: string
+[0mSummary :        Default value: averagepulse
+[0mSummary : Option CoherentGain []
+[0mSummary :        Coherent gain mode for window.
+[0mSummary :        Type: int64_t
+[0mSummary :        Default value: 0
+[0mSummary : Option CutOffFrequency [sec]
+[0mSummary :        Maximum frequency for amplitude calculation.
+[0mSummary :        Type: double
+[0mSummary :        Default value: -1.000000
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option DrawOption
+[0mSummary :        Possible options: Chi2, ReIm, PowerPhase, PowerFreqPhase, ANPS, power
+[0mSummary :        Type: string
+[0mSummary :        Default value: power
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputModule
+[0mSummary :        Name of basic module where to retrieve isnoise variable from.
+[0mSummary :        Type: string
+[0mSummary :        Default value: module
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option LoadANPS
+[0mSummary :        Load ANPS from different file than current one.
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option LoadAP
+[0mSummary :        Load AP from different file than current one.
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option MaxChi2Iterations []
+[0mSummary :        Maximum number of iterations for Chi2 minimization.
+[0mSummary :        Type: int64_t
+[0mSummary :        Default value: 15
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option map Precision []
+[0mSummary :            Required relative precision for Chi2 minimization.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option TimeRange [#sample]
+[0mSummary :        Time window for Chi2 minimization.
+[0mSummary :        Type: double
+[0mSummary :        Default value: 1.000000
+[0mSummary : Option TukeyAlpha []
+[0mSummary :        Alpha value for Tukey windowing. Ignore for other window functions.
+[0mSummary :        Type: double
+[0mSummary :        Default value: 0.500000
+[0mSummary : Option Windowing
+[0mSummary :        Window function for FFT.
+[0mSummary :        Type: string
+[0mSummary :        Default value: none
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ---------------------------
+[0mSummary : ------------------------------
+[0mSummary :    Module    numberoftriggers.
+[0mSummary : ------------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ------------------------------
+[0mSummary : ------------------------------
+[0mSummary :    Module    maxminusbaseline.
+[0mSummary : ------------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputBaselineModule
+[0mSummary :        Module from which to retrieve baseline value.
+[0mSummary :        Type: string
+[0mSummary :        Default value: baseline
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map of vectors Window [time]
+[0mSummary :                       Window starting from the trigger where the maximum is sear
+Summary : ched. [trigger-X, trigger+Y] s
+[0mSummary :                       Type: double
+[0mSummary :                       Default value: empty vector
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ------------------------------
+[0mSummary : -----------------------------------
+[0mSummary :    Module    iterativeaveragepulse.
+[0mSummary : -----------------------------------
+[0mSummary : Option AmplitudeRange []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: 0.020000
+[0mSummary : Option AmplitudeStep []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: 0.100000
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option TimeRange []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: 1.000000
+[0mSummary : Option TimeStep []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: 0.200000
+[0mSummary : Option TukeyAlpha []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: 0.500000
+[0mSummary : Option Windowing
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: none
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : -----------------------------------
+[0mSummary : -------------------------------------
+[0mSummary :    Module    inversefouriertransform.
+[0mSummary : -------------------------------------
+[0mSummary : Option CoherentGain []
+[0mSummary :        
+[0mSummary :        Type: int64_t
+[0mSummary :        Default value: 0
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option TukeyAlpha []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: 0.500000
+[0mSummary : Option Windowing
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: none
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : -------------------------------------
+[0mSummary : ----------------------
+[0mSummary :    Module    integral.
+[0mSummary : ----------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputBaselineModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: baseline
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map StartTime [sec]
+[0mSummary :            Start of period used for integral calculation.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map StopTime [sec]
+[0mSummary :            End of period used for integral calculation.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ----------------------
+[0mSummary : ---------------------
+[0mSummary :    Module    gaggpsd.
+[0mSummary : ---------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option map InitialAlphaMean []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map InitialGammaMean []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option InputChi2Module
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: chi2
+[0mSummary : Option InputIntegralModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: integral
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option map IntegralMaximum []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map IntegralMinimum []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map NBinsIntegral []
+[0mSummary :            
+[0mSummary :            Type: int64_t
+[0mSummary :            Default value: 0
+[0mSummary : Option map NBinsPSD []
+[0mSummary :            
+[0mSummary :            Type: int64_t
+[0mSummary :            Default value: 0
+[0mSummary : Option map NSigmaCut []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map NSlices []
+[0mSummary :            
+[0mSummary :            Type: int64_t
+[0mSummary :            Default value: 0
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option map PSDMaximum []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map PSDMinimum []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ---------------------
+[0mSummary : ----------------------------------
+[0mSummary :    Module    gagggammacalibration.
+[0mSummary : ----------------------------------
+[0mSummary : Option map Accuracy []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map BinsNumber []
+[0mSummary :            
+[0mSummary :            Type: int64_t
+[0mSummary :            Default value: 0
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option IntegralModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: integral
+[0mSummary : Option map MaxFit []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map MaxSpectrum []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map MinFit []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map MinSpectrum []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map NominalEnergy []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option map PeakResolution []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map PeakWidth []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ----------------------------------
+[0mSummary : ------------------------------
+[0mSummary :    Module    fouriertransform.
+[0mSummary : ------------------------------
+[0mSummary : Option CoherentGain []
+[0mSummary :        Coherent Gain Mode.
+[0mSummary :        Type: int64_t
+[0mSummary :        Default value: 0
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option DrawOption
+[0mSummary :        Possible options: ReIm, PowerPhase, PowerFreqPhase, power
+[0mSummary :        Type: string
+[0mSummary :        Default value: power
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option TukeyAlpha []
+[0mSummary :        Alpha value for Tukey windowing. Ignored for other window functions.
+[0mSummary :        Type: double
+[0mSummary :        Default value: 0.500000
+[0mSummary : Option Windowing
+[0mSummary :        Window function.
+[0mSummary :        Type: string
+[0mSummary :        Default value: none
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ------------------------------
+[0mSummary : ----------------------------
+[0mSummary :    Module    flagpropagator.
+[0mSummary : ----------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option FlagPropagatorPath
+[0mSummary :        Path of the trigger file (.root) of the muon veto
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Shift [ms]
+[0mSummary :        Window of the search in the muon veto trigger
+[0mSummary :        Type: double
+[0mSummary :        Default value: 0.000000
+[0mSummary : Option Type
+[0mSummary :        Possible values: 'pulser' or 'muon'.
+[0mSummary :        Type: string
+[0mSummary :        Default value: pulser
+[0mSummary : Option Window [ms]
+[0mSummary :        Window of the search in the muon veto trigger
+[0mSummary :        Type: double
+[0mSummary :        Default value: -1.000000
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ----------------------------
+[0mSummary : -----------------------------
+[0mSummary :    Module    fittedamplitude.
+[0mSummary : -----------------------------
+[0mSummary : Option AP
+[0mSummary :        Name of AP histogram
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option APModuleName
+[0mSummary :        Module from which to retrieve AP histogram
+[0mSummary :        Type: string
+[0mSummary :        Default value: averagepulse
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option LoadAP
+[0mSummary :        Load AP from different file than current one.
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : -----------------------------
+[0mSummary : ------------------------------------
+[0mSummary :    Module    filterfouriertransform.
+[0mSummary : ------------------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option DrawOption
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: power
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option map Radius []
+[0mSummary :            
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ------------------------------------
+[0mSummary : --------------------------
+[0mSummary :    Module    downsampling.
+[0mSummary : --------------------------
+[0mSummary : Option DownSamplingMode
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option MergingFactor []
+[0mSummary :        
+[0mSummary :        Type: int64_t
+[0mSummary :        Default value: 1
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : --------------------------
+[0mSummary : -----------------------
+[0mSummary :    Module    decaytime.
+[0mSummary : -----------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputBaselineModule
+[0mSummary :        Name of module where to retrieve the baseline from.
+[0mSummary :        Type: string
+[0mSummary :        Default value: baseline
+[0mSummary : Option InputMaxMinusBaselineModule
+[0mSummary :        Name of module where to retrieve the maxminusbaseline value from.
+[0mSummary :        Type: string
+[0mSummary :        Default value: maxminusbaseline
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map StartPercentage []
+[0mSummary :            Fraction of signal height from which to start decaytime calculation.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map StopPercentage []
+[0mSummary :            Fraction of signal height where to stop decaytime calculation.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : -----------------------
+[0mSummary : ---------------------
+[0mSummary :    Module    cuts_ap.
+[0mSummary : ---------------------
+[0mSummary : Option BinCut []
+[0mSummary :        
+[0mSummary :        Type: int64_t
+[0mSummary :        Default value: 5
+[0mSummary : Option CutMode
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: none
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputMaxminusbaselineModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: maxminusbaseline
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option SNCut []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: 0.000000
+[0mSummary : Option TimeCut []
+[0mSummary :        
+[0mSummary :        Type: int64_t
+[0mSummary :        Default value: -1
+[0mSummary : Option TimestampModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: timestamp
+[0mSummary : Option TriggerDelayModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: triggerdelay
+[0mSummary : Option Type
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: none
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ---------------------
+[0mSummary : ------------------
+[0mSummary :    Module    cuts.
+[0mSummary : ------------------
+[0mSummary : Option list CutVariable
+[0mSummary :             
+[0mSummary :             Type: string
+[0mSummary :             Default value: none
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option Mode
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: automatic
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Threshold []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: 1.000000
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ------------------
+[0mSummary : -----------------------
+[0mSummary :    Module    crosscorr.
+[0mSummary : -----------------------
+[0mSummary : Option CorrCut []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: 0.750000
+[0mSummary : Option CorrFraction []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: 0.500000
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputMaxminusbaselineModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: maxminusbaseline
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OnlineCutBottom []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: -1.000000
+[0mSummary : Option OnlineCutTop []
+[0mSummary :        
+[0mSummary :        Type: double
+[0mSummary :        Default value: -1.000000
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option TimestampModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: timestamp
+[0mSummary : Option TriggerDelayModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: triggerdelay
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : -----------------------
+[0mSummary : -------------------------
+[0mSummary :    Module    correlation.
+[0mSummary : -------------------------
+[0mSummary : Option AP
+[0mSummary :        Name of AP histogram
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option APModuleName
+[0mSummary :        Module from which to retrieve AP histogram
+[0mSummary :        Type: string
+[0mSummary :        Default value: averagepulse
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option HalfWindow [s]
+[0mSummary :        Simmetric window for correlation calculation
+[0mSummary :        Type: double
+[0mSummary :        Default value: 0.500000
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option LoadAP
+[0mSummary :        Load AP from different file than current one.
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : -------------------------
+[0mSummary : -------------------------
+[0mSummary :    Module    convolution.
+[0mSummary : -------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option map FilterLength []
+[0mSummary :            Number of samples used for filter.
+[0mSummary :            Type: int64_t
+[0mSummary :            Default value: 0
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map Sigma [sec]
+[0mSummary :            Shaping time
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : -------------------------
+[0mSummary : ------------------
+[0mSummary :    Module    chi2.
+[0mSummary : ------------------
+[0mSummary : Option AP
+[0mSummary :        Average pulse name
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option APModuleName
+[0mSummary :        Module from which to retrieve AP histogram
+[0mSummary :        Type: string
+[0mSummary :        Default value: averagepulse
+[0mSummary : Option map CutOffFrequency [Hz]
+[0mSummary :            Maximum frequency for Chi2 calculation.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option Domain
+[0mSummary :        Possible choices: time, frequency, power.
+[0mSummary :        Type: string
+[0mSummary :        Default value: time
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputAmplitudeModule
+[0mSummary :        Module from which the amplitude variable is retrieved.
+[0mSummary :        Type: string
+[0mSummary :        Default value: maxminusbaseline
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option map MaxIterations []
+[0mSummary :            Maximum number of iterations for Chi2 minimization
+[0mSummary :            Type: int64_t
+[0mSummary :            Default value: 0
+[0mSummary : Option NormalizationMode
+[0mSummary :        average --> normalize AP to single event; singleevent --> normalize singl
+Summary : e event to AP
+[0mSummary :        Type: string
+[0mSummary :        Default value: average
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option map Precision []
+[0mSummary :            Relative precision required on Chi2 minimization.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map StartFrequency [Hz]
+[0mSummary :            Minimum frequency for Chi2 calculation.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map TimeWindow [sec]
+[0mSummary :            Delta-t against which the Chi-2 is minimized. Valid only for time dom
+Summary : ain.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ------------------
+[0mSummary : -------------------------
+[0mSummary :    Module    calibration.
+[0mSummary : -------------------------
+[0mSummary : Option map of vectors Coefficients [adimensional]
+[0mSummary :                       Coefficient of calibration function
+[0mSummary :                       Type: double
+[0mSummary :                       Default value: empty vector
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option map Formula []
+[0mSummary :            
+[0mSummary :            Type: string
+[0mSummary :            Default value: 
+[0mSummary : Option Gain [adimensional]
+[0mSummary :        Gain in order to compute the rough calibration from the sensitivity. Defa
+Summary : ult 910
+[0mSummary :        Type: double
+[0mSummary :        Default value: -1.000000
+[0mSummary : Option InputCalibrationModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: stabilization_all
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option LoadCalTxt
+[0mSummary :        Sensitivities for all the channel --> First rough calibration
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option LoadCalibration
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option map of vectors MoManualPeak [adimensional]
+[0mSummary :                       Delimitators of Th peak
+[0mSummary :                       Type: double
+[0mSummary :                       Default value: empty vector
+[0mSummary : Option NameFunc
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: Calib_final
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map of vectors ThManualPeak [adimensional]
+[0mSummary :                       Delimitators of Th peak
+[0mSummary :                       Type: double
+[0mSummary :                       Default value: empty vector
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : -------------------------
+[0mSummary : ---------------------------------
+[0mSummary :    Module    baselinesubtraction.
+[0mSummary : ---------------------------------
+[0mSummary : Option BaselineModule
+[0mSummary :        Name of baseline module where to retrieve the baseline from.
+[0mSummary :        Type: string
+[0mSummary :        Default value: baseline
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ---------------------------------
+[0mSummary : --------------------------------------
+[0mSummary :    Module    baselineslopesubtraction.
+[0mSummary : --------------------------------------
+[0mSummary : Option BaselineSlopeModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: baselineslope
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : --------------------------------------
+[0mSummary : ---------------------------
+[0mSummary :    Module    baselineslope.
+[0mSummary : ---------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map StartTime [sec]
+[0mSummary :            Start of period used for baseline calculation.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map StopTime [sec]
+[0mSummary :            End of period used for baseline calculation.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ---------------------------
+[0mSummary : ----------------------
+[0mSummary :    Module    baseline.
+[0mSummary : ----------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map StartTime [sec]
+[0mSummary :            Start of period used for baseline calculation.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map StopTime [sec]
+[0mSummary :            End of period used for baseline calculation.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ----------------------
+[0mSummary : ------------------------
+[0mSummary :    Module    barycenter.
+[0mSummary : ------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ------------------------
+[0mSummary : -------------------------
+[0mSummary :    Module    badinterval.
+[0mSummary : -------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option TxtBadInterval
+[0mSummary :        Path to the txt where the Bad Interval are inserted.
+[0mSummary :        Type: string
+[0mSummary :        Default value: none
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : -------------------------
+[0mSummary : --------------------------
+[0mSummary :    Module    averagepulse.
+[0mSummary : --------------------------
+[0mSummary : Option CoherentGain []
+[0mSummary :        Coherent gain mode for window function.
+[0mSummary :        Type: int64_t
+[0mSummary :        Default value: 0
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputMaxMinusBaselineModule
+[0mSummary :        
+[0mSummary :        Type: string
+[0mSummary :        Default value: maxminusbaseline
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option Normalize
+[0mSummary :        Normalize each event by its max-minus-baseline before building AP.
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option NormalizeAverage
+[0mSummary :        Normalize AP to have height 1.
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option map PulseMax [a.u.]
+[0mSummary :            Maximum y-axis value for 2-D event distribution.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map PulseMin [a.u.]
+[0mSummary :            Minimum y-axis value for 2-D event distribution.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map TrimmingFraction []
+[0mSummary :            Fraction of events to be discarded on each tail.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option TukeyAlpha []
+[0mSummary :        Alpha-value for Tukey windowing. Ignored for other window functions.
+[0mSummary :        Type: double
+[0mSummary :        Default value: 0.500000
+[0mSummary : Option Windowing
+[0mSummary :        Windowing to be applied to AP FFT.
+[0mSummary :        Type: string
+[0mSummary :        Default value: none
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : --------------------------
+[0mSummary : ----------------------------------
+[0mSummary :    Module    averagepowerspectrum.
+[0mSummary : ----------------------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option Gain []
+[0mSummary :        Total Electronics Gain
+[0mSummary :        Type: double
+[0mSummary :        Default value: 1.000000
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option map Normalize
+[0mSummary :            Normmalize power spectrum to have integral 1.
+[0mSummary :            Type: bool
+[0mSummary :            Default value: 0
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option map PowerPlotMaxValue [a.u.]
+[0mSummary :            Maximum y-axis value for 2-D power spectrum distribution.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map TrimmingFraction []
+[0mSummary :            Fraction of events to be discarded on each tail.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : ----------------------------------
+[0mSummary : --------------------
+[0mSummary :    Module    module.
+[0mSummary : --------------------
+[0mSummary : Option Draw
+[0mSummary :        Draw output of this module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option Enable
+[0mSummary :        Enable module
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 1
+[0mSummary : Option InputWaveform
+[0mSummary :        Name of input waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: original
+[0mSummary : Option OutputWaveform
+[0mSummary :        Name of output waveform in waveform map
+[0mSummary :        Type: string
+[0mSummary :        Default value: 
+[0mSummary : Option RunOnlyOnGoodEvents
+[0mSummary :        Run module only on events that pass all cuts
+[0mSummary :        Type: bool
+[0mSummary :        Default value: 0
+[0mSummary : Option map pretrigger [sec]
+[0mSummary :            Length of pretrigger, i.e. part of waveform before trigger point.
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : Option map windowlength [sec]
+[0mSummary :            Waveform length
+[0mSummary :            Type: double
+[0mSummary :            Default value: 0.000000
+[0mSummary : --------------------
+[0m
