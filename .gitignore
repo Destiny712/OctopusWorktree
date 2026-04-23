@@ -1,41 +1,70 @@
-# Prerequisites
-*.d
+# =============================
+#  Octopus Project .gitignore
+#  (WSL + ULITE + Singularity)
+# =============================
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# --- 1. Sandboxes & Containers ---
+sandboxes/
+container/*.sif
+container/*.def
+container/*.img
+container/*.simg
+container/*.squashfs
+singularity/deb/*.deb
+src/
 
-# Precompiled Headers
-*.gch
-*.pch
+# --- 2. Data & Results ---
+data/
+results/
+downloads/
+tmp/
+logs/
+*.log
 
-# Linker files
-*.ilk
+# --- 3. Build artifacts ---
+build/
+build*/        # e.g., build, build-debug, build-release
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
 
-# Debugger Files
-*.pdb
+# --- 4. Python cache ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Compiled Dynamic libraries
+# --- 5. Editor / OS junk ---
+*.swp
+*.swo
+*.tmp
+*.bak
+*.DS_Store
+
+# --- 6. Octopus-specific runtime outputs ---
+*.root
+*.bin
+*.dat
+*.npy
+*.npz
+*.h5
 *.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
+*.o
 *.a
-*.lib
 
-# Executables
-*.exe
-*.out
-*.app
+# --- 7. WSL / ULITE environment noise ---
+*.pid
+nohup.out
 
-# debug information files
-*.dwo
+# --- 8. VSCode / JetBrains ---
+.vscode/
+.idea/
+
+# --- 9. Credentials (just in case) ---
+*.key
+*.pem
+*.crt
+
+# --- 10. Keep config directory tracked ---
+!config/
